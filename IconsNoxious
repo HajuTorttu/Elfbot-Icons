@@ -1,0 +1,957 @@
+[Icons]
+Name: sd
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | setpos [$screenleft-230] [$screentop+40] | if [$targetingon == 1 && $caveboton ==1] displaytext 'TARGETING ON - CAVEBOT ON' | else if [$targetingon == 1 && $caveboton ==0] displaytext 'TARGETING ON - CAVEBOT OFF' | else if [$targetingon == 0 && $caveboton ==1] displaytext 'TARGETING OFF - CAVEBOT ON' | else if [$targetingon == 0 && $caveboton == 0] displaytext 'TARGETING OFF - CAVEBOT OFF' 
+RightCommand: auto 100 dontlist | setcolor 206 206 206 | setpos [$screenleft-268] [$screentop+104] | displaytext 'Left click: targeting. Right click: cavebot
+
+State: Inactive
+IconType: Normal
+IconIds: 946 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 15
+AlignY: Absolute
+PositionY: 40
+Text: RIGHT AND LEFT CLICK HERE
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 946 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 15
+AlignY: Absolute
+PositionY: 40
+Text: 
+TextColor: 255
+HoverColor: 16777215
+
+Name: toggle targ cavebot
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: settargeting toggle | dontlist
+RightCommand: setcavebot toggle | dontlist
+
+State: Inactive
+IconType: Normal
+IconIds: 775 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 10
+AlignY: Absolute
+PositionY: 70
+Text: toggle
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 775 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 10
+AlignY: Absolute
+PositionY: 70
+Text: toggle
+TextColor: 255
+HoverColor: 16777215
+
+Name: SUPPORT SPELLS
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 0
+Text: ------- SUPPORT SPELLS --------
+TextColor: 16776960
+HoverColor: 16776960
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: SUPPORT SPELLS:
+TextColor: 16776960
+HoverColor: 16776960
+
+Name: haste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [nothasted && $inpz==0 && $mp >= 60] haste
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 10386 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 40
+Text: haste
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 10386 0 0 0
+BkgType: Normal
+BkgIds: 946 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 40
+Text: haste
+TextColor: 65535
+HoverColor: 16777215
+
+Name: strong haste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [nothasted && $inpz==0 && $mp >= 100] stronghaste
+RightCommand: 
+
+State: Inactive
+IconType: Right
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 40
+Text:  s haste
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Right
+IconIds: 3079 0 0 0
+BkgType: Right
+BkgIds: 9018 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 40
+Text:  s haste
+TextColor: 65535
+HoverColor: 16777215
+
+Name: exani tera
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: say 'exani tera' | dontlist
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 3003 0 0 0
+AlignX: Absolute
+PositionX: 1565
+AlignY: Absolute
+PositionY: 40
+Text: m rope
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 3003 0 0 0
+AlignX: Absolute
+PositionX: 1565
+AlignY: Absolute
+PositionY: 40
+Text: m rope
+TextColor: 65535
+HoverColor: 16777215
+
+Name: HEALING
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 65
+Text: ---------- HEALING ----------
+TextColor: 16776960
+HoverColor: 16776960
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 65
+Text: ---------- HEALING ----------
+TextColor: 16776960
+HoverColor: 16776960
+
+Name: mage healing
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [($hppc <= 99 && $hppc >= 70) || ($hppc <70 && $mp < 70) && $mp > 30] say 'exura' | if [($hppc < 70 && $hppc >=40) || ($hppc < 40 && $mp < 160) && $mp > 70] say 'exura gran' | if [$hppc < 40 && $mp > 160] say 'exura vita'
+RightCommand: say exura vita
+
+State: Inactive
+IconType: Normal
+IconIds: 5903 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 100
+Text: mage
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 266 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 100
+Text: mage
+TextColor: 65535
+HoverColor: 16777215
+
+Name: mp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$mppc < 50] useoncreature 268 self
+RightCommand: useoncreature 268 self
+
+State: Inactive
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 100
+Text:  mp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 100
+Text:  mp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: smp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$mppc < 50] useoncreature 237 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1545
+AlignY: Absolute
+PositionY: 100
+Text: smp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1545
+AlignY: Absolute
+PositionY: 100
+Text: smp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: gmp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$mppc < 50] useoncreature 238 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1580
+AlignY: Absolute
+PositionY: 100
+Text: gmp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1580
+AlignY: Absolute
+PositionY: 100
+Text: gmp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: knight healing
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [($hppc <= 90 && $hppc >= 80) || ($hppc <80 && $mp < 65) && $mp > 20] say 'exura' | if [$hppc < 80 && $mp > 65] say 'exana mort'
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 896 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 135
+Text: knight
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 896 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 135
+Text: knight
+TextColor: 65535
+HoverColor: 16777215
+
+Name: hp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$hppc < 50] useoncreature 266 self
+RightCommand: useoncreature 266 self
+
+State: Inactive
+IconType: Normal
+IconIds: 266 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 135
+Text:   hp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 266 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 135
+Text:   hp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: shp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$hppc < 50] useoncreature 236 self
+RightCommand: useoncreature 236 self
+
+State: Inactive
+IconType: Normal
+IconIds: 236 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1545
+AlignY: Absolute
+PositionY: 135
+Text: shp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 236 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1545
+AlignY: Absolute
+PositionY: 135
+Text: shp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: ghp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$hppc < 50] useoncreature 239 self
+RightCommand: useoncreature 239 self
+
+State: Inactive
+IconType: Normal
+IconIds: 239 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1580
+AlignY: Absolute
+PositionY: 135
+Text: ghp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 239 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1580
+AlignY: Absolute
+PositionY: 135
+Text: ghp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: uhp
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 dontlist | if [$hppc < 50] useoncreature 7643 self
+RightCommand: useoncreature 7643 self
+
+State: Inactive
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1615
+AlignY: Absolute
+PositionY: 135
+Text: uhp
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1615
+AlignY: Absolute
+PositionY: 135
+Text: uhp
+TextColor: 65535
+HoverColor: 16777215
+
+Name: paladin healing
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 8023 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 175
+Text: paladin NOT WORKING YET
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 8023 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 175
+Text: paladin NOT WORKING YET
+TextColor: 65535
+HoverColor: 16777215
+
+Name: UTILITIES
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 200
+Text: ---------- UTILITIES ----------
+TextColor: 16776960
+HoverColor: 16776960
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 200
+Text: UTILITIES
+TextColor: 16776960
+HoverColor: 16776960
+
+Name: eat food
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [$inpz == 0] eatfood | [$inpz == 0] eatfood | wait 20000
+RightCommand: eatfood
+
+State: Inactive
+IconType: Normal
+IconIds: 3725 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 300
+Text: food
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 3725 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1480
+AlignY: Absolute
+PositionY: 300
+Text: food
+TextColor: 65535
+HoverColor: 16777215
+
+Name: mana waste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [$mppc > 30] say 'utana vid'
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 100 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 600
+Text: mana waste
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 100 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 600
+Text: mana waste
+TextColor: 65535
+HoverColor: 16777215
+
+Name: dance
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 dontlist | turnn | wait 100 | turne | wait 100 | turns | wait 100 | turnw | wait 100 | turnn
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 140 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 700
+Text: dance
+TextColor: 255
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 140 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 700
+Text: dance
+TextColor: 65535
+HoverColor: 0
+
+Name: cc changer
+Enabled: yes
+DrawAsBackground: yes
+Size: Small
+LeftCommand: auto 700 dontlist | if [$itemcount.3043 >= 100] {openitem 3043 2 golden backpack} | stackitems
+RightCommand: 
+
+State: Inactive
+IconType: Left
+IconIds: 3043 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1598
+AlignY: Absolute
+PositionY: 770
+Text: cc
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Left
+IconIds: 3043 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1598
+AlignY: Absolute
+PositionY: 770
+Text: cc
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: plat changer
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 700 dontlist | if [$itemcount.3035 >= 100] {openitem 3035 2 golden backpack} | stackitems
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3035 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 770
+Text: plat
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Normal
+IconIds: 3035 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 770
+Text: plat
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: gold changer
+Enabled: yes
+DrawAsBackground: yes
+Size: Small
+LeftCommand: auto 700 dontlist | if [$itemcount.3031 >= 100] {openitem 3031 2 golden backpack} | stackitems
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3031 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 770
+Text: gold
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Normal
+IconIds: 3031 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1470
+AlignY: Absolute
+PositionY: 770
+Text: gold
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: Sort gold
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | moveitems 3031 'golden backpack | moveitems 3035 'golden backpack | moveitems 3043 'golden backpack | moveitems 3029 'golden backpack | moveitems 3032 'golden backpack | moveitems 9057 'golden backpack | moveitems 3033 'golden backpack | moveitems 3030 'golden backpack | moveitems 3032 'golden backpack | 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 2871 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 660
+Text: Gold
+TextColor: 255
+HoverColor: 65535
+
+State: Active
+IconType: Normal
+IconIds: 2871 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 660
+Text: Gold
+TextColor: 16777088
+HoverColor: 65535
+
+Name: spyup
+Enabled: yes
+DrawAsBackground: yes
+Size: Small
+LeftCommand: spyup
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 5064 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1600
+AlignY: Absolute
+PositionY: 810
+Text: Spyup
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Normal
+IconIds: 5064 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1600
+AlignY: Absolute
+PositionY: 810
+Text: Spyup
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: spydown
+Enabled: yes
+DrawAsBackground: yes
+Size: Small
+LeftCommand: spydown
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 5064 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 810
+Text: spydown
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Normal
+IconIds: 5064 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1530
+AlignY: Absolute
+PositionY: 810
+Text: spydown
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: Item pickup
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | collectitems 'empty' 3031 285 283 284
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 2472 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1590
+AlignY: Absolute
+PositionY: 717
+Text: pickup
+TextColor: 255
+HoverColor: 8454143
+
+State: Active
+IconType: Normal
+IconIds: 2472 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1590
+AlignY: Absolute
+PositionY: 717
+Text:  pickup
+TextColor: 16777088
+HoverColor: 8454143
+
+Name: mana train
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 dontlist | if [$maxmp-$mp <= 20] say exura | usegrounditem 2773 | usegrounditem 2772
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3245 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 400
+Text: magic train
+TextColor: 255
+HoverColor: 16777215
+
+State: Active
+IconType: Normal
+IconIds: 3245 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 1515
+AlignY: Absolute
+PositionY: 400
+Text: magic train
+TextColor: 65535
+HoverColor: 16777215
